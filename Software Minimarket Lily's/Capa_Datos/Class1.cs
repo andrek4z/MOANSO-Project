@@ -10,5 +10,6 @@ namespace Capa_Datos
     {
         //Comentario de Prueba
         string info = "Hola mi gente latina";
+        string name = "Hola gente Peruana Chola";
     }
 }
