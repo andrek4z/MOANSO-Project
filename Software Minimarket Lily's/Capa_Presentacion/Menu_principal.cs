@@ -35,6 +35,7 @@ namespace Capa_Presentacion
 
         private void Menu_principal_Load(object sender, EventArgs e)
         {
+
         }
     }
 }
