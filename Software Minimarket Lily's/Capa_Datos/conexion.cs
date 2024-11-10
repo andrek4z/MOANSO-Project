@@ -18,7 +18,7 @@ namespace Capa_Datos
                 cnx = new SqlConnection("Data Source=DESKTOP-5J5OED0\\SQLEXPRESS;Initial Catalog=MinimarketLogistica_Normalizada");
                 cnx.Open();
             }
-            catch
+            catch 
             {
              
             }
