@@ -8,5 +8,7 @@ namespace Capa_Datos
 {
     public class Class1
     {
+        //Comentario de Prueba
+        string info = "Hola mi gente latina";
     }
 }
