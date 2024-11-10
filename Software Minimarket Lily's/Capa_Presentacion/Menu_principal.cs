@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Capa_Datos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,6 +31,10 @@ namespace Capa_Presentacion
         private void label15_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Menu_principal_Load(object sender, EventArgs e)
+        {
         }
     }
 }
