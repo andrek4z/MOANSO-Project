@@ -83,6 +83,7 @@
             this.btnIngreso.TabIndex = 5;
             this.btnIngreso.Text = "Ingresar";
             this.btnIngreso.UseVisualStyleBackColor = true;
+            this.btnIngreso.Click += new System.EventHandler(this.btnIngreso_Click);
             // 
             // label1
             // 

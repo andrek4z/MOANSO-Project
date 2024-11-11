@@ -22,24 +22,19 @@ namespace Capa_Presentacion
 
         }
 
-        /*private void RecolectarInformacion()
+        private void btnIngreso_Click(object sender, EventArgs e)
         {
-            string usuario = txtUser.Text;
-            string contraseña = txtPassword.Text;
+            string user = txtUser.Text;
+            string password = txtPassword.Text;
 
-            ValidarCredenciales(usuario, contraseña);
-        }
-
-        private void ValidarCredenciales(string usuario, string contraseña)
-        {
-            if (usuario == "admin" && contraseña == "Lavidaesunalenteja*")
+            if (user == "admin" && password == "Lavidaesunalenteja*")
             {
                 MessageBox.Show("Bienvenido a tiendas Lily's");
             }
-            else 
+            else
             {
                 MessageBox.Show("Informacion Invalida, pruebe nuevamente");
             }
-        }*/
+        }
     }
 }
