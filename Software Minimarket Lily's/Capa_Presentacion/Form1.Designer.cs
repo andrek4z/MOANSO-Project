@@ -76,10 +76,10 @@
             // 
             // btnIngreso
             // 
-            this.btnIngreso.Location = new System.Drawing.Point(435, 265);
+            this.btnIngreso.Location = new System.Drawing.Point(221, 261);
             this.btnIngreso.Margin = new System.Windows.Forms.Padding(4);
             this.btnIngreso.Name = "btnIngreso";
-            this.btnIngreso.Size = new System.Drawing.Size(100, 28);
+            this.btnIngreso.Size = new System.Drawing.Size(120, 36);
             this.btnIngreso.TabIndex = 5;
             this.btnIngreso.Text = "Ingresar";
             this.btnIngreso.UseVisualStyleBackColor = true;
