@@ -27,11 +27,30 @@ namespace Capa_Presentacion
 
         }
 
-        private void btnVolverMenu_Click(object sender, EventArgs e)
+        private void btnAgregar_Click(object sender, EventArgs e)
         {
 
-            MenuPrincipal frm1 = new MenuPrincipal();
-            frm1.Show();
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGuardarCambios_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            MenuPrincipal menuPrincipal = new MenuPrincipal();
+            menuPrincipal.Show();
             this.Close();
         }
     }
