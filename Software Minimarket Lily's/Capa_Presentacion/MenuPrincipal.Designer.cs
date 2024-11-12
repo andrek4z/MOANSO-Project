@@ -31,13 +31,13 @@
             this.btnVentas = new System.Windows.Forms.Button();
             this.btnAlmacen = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.ptbAlmacen = new System.Windows.Forms.PictureBox();
-            this.ptbVentas = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAlmacen)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbVentas)).BeginInit();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.ptbVentas = new System.Windows.Forms.PictureBox();
+            this.ptbAlmacen = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbVentas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbAlmacen)).BeginInit();
             this.SuspendLayout();
             // 
             // btnVentas
@@ -72,30 +72,6 @@
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // ptbAlmacen
-            // 
-            this.ptbAlmacen.Location = new System.Drawing.Point(434, 110);
-            this.ptbAlmacen.Name = "ptbAlmacen";
-            this.ptbAlmacen.Size = new System.Drawing.Size(247, 272);
-            this.ptbAlmacen.TabIndex = 3;
-            this.ptbAlmacen.TabStop = false;
-            // 
-            // ptbVentas
-            // 
-            this.ptbVentas.Location = new System.Drawing.Point(61, 110);
-            this.ptbVentas.Name = "ptbVentas";
-            this.ptbVentas.Size = new System.Drawing.Size(247, 272);
-            this.ptbVentas.TabIndex = 4;
-            this.ptbVentas.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(792, 110);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(247, 272);
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -105,6 +81,34 @@
             this.label1.Size = new System.Drawing.Size(190, 29);
             this.label1.TabIndex = 6;
             this.label1.Text = "Elija una opción:";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(792, 110);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(247, 247);
+            this.pictureBox3.TabIndex = 5;
+            this.pictureBox3.TabStop = false;
+            // 
+            // ptbVentas
+            // 
+            this.ptbVentas.Image = global::Capa_Presentacion.Properties.Resources.ventas__1_;
+            this.ptbVentas.Location = new System.Drawing.Point(61, 110);
+            this.ptbVentas.Name = "ptbVentas";
+            this.ptbVentas.Size = new System.Drawing.Size(247, 247);
+            this.ptbVentas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.ptbVentas.TabIndex = 4;
+            this.ptbVentas.TabStop = false;
+            // 
+            // ptbAlmacen
+            // 
+            this.ptbAlmacen.Image = global::Capa_Presentacion.Properties.Resources.almacen1;
+            this.ptbAlmacen.Location = new System.Drawing.Point(434, 110);
+            this.ptbAlmacen.Name = "ptbAlmacen";
+            this.ptbAlmacen.Size = new System.Drawing.Size(247, 247);
+            this.ptbAlmacen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.ptbAlmacen.TabIndex = 3;
+            this.ptbAlmacen.TabStop = false;
             // 
             // MenuPrincipal
             // 
@@ -122,9 +126,9 @@
             this.Name = "MenuPrincipal";
             this.Text = "Menu Principal";
             this.Load += new System.EventHandler(this.Menu_principal_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAlmacen)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbVentas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbVentas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbAlmacen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
