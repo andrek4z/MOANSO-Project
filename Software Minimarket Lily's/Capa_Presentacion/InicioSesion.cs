@@ -29,7 +29,7 @@ namespace Capa_Presentacion
 
             if (user == "admin" && password == "Lavidaesunalenteja*")
             {
-                MessageBox.Show("Bienvenido a tiendas Lily's");
+                //MessageBox.Show("Bienvenido a tiendas Lily's");
                 txtUser.Clear();
                 txtPassword.Clear();
                 MenuPrincipal menuPrincipal = new MenuPrincipal();
