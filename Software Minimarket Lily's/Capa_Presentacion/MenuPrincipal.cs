@@ -42,7 +42,7 @@ namespace Capa_Presentacion
         }
         private void CargarProductos()
         {
-            listViewBD.Items.Clear(); // Limpia el ListView antes de agregar los datos
+            /*listViewBD.Items.Clear(); // Limpia el ListView antes de agregar los datos
             DataTable dt = productoNegocio.ObtenerProductos();
 
             foreach (DataRow row in dt.Rows)
@@ -52,7 +52,19 @@ namespace Capa_Presentacion
                 item.SubItems.Add(row["Cantidad"].ToString());
                 item.SubItems.Add(row["Precio"].ToString());
                 listViewBD.Items.Add(item);
-            }
+            }*/
+        }
+
+        private void btnVentas_Click(object sender, EventArgs e)
+        {
+            Ventas ventas = new Ventas();
+            ventas.Show();
+        }
+
+        private void btnAlmacen_Click(object sender, EventArgs e)
+        {
+            Almacen almacen = new Almacen();
+            almacen.Show();
         }
     }
 }

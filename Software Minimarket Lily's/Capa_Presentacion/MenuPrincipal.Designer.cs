@@ -49,6 +49,7 @@
             this.btnVentas.TabIndex = 0;
             this.btnVentas.Text = "Ventas";
             this.btnVentas.UseVisualStyleBackColor = true;
+            this.btnVentas.Click += new System.EventHandler(this.btnVentas_Click);
             // 
             // btnAlmacen
             // 
@@ -59,6 +60,7 @@
             this.btnAlmacen.TabIndex = 1;
             this.btnAlmacen.Text = "Almacen";
             this.btnAlmacen.UseVisualStyleBackColor = true;
+            this.btnAlmacen.Click += new System.EventHandler(this.btnAlmacen_Click);
             // 
             // button3
             // 
