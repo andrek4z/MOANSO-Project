@@ -36,7 +36,6 @@
             this.txtCodigoP = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtPrecio = new System.Windows.Forms.TextBox();
             this.txtStock = new System.Windows.Forms.TextBox();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnGuardarCambios = new System.Windows.Forms.Button();
@@ -45,7 +44,7 @@
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
-            this.txtPrecioP = new System.Windows.Forms.TextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -131,13 +130,6 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Precio:";
             // 
-            // txtPrecio
-            // 
-            this.txtPrecio.Location = new System.Drawing.Point(0, 0);
-            this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(100, 22);
-            this.txtPrecio.TabIndex = 22;
-            // 
             // txtStock
             // 
             this.txtStock.Location = new System.Drawing.Point(842, 91);
@@ -222,19 +214,19 @@
             this.btnVolver.UseVisualStyleBackColor = true;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
-            // txtPrecioP
+            // txtPrecio
             // 
-            this.txtPrecioP.Location = new System.Drawing.Point(676, 91);
-            this.txtPrecioP.Name = "txtPrecioP";
-            this.txtPrecioP.Size = new System.Drawing.Size(64, 22);
-            this.txtPrecioP.TabIndex = 23;
+            this.txtPrecio.Location = new System.Drawing.Point(676, 91);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(64, 22);
+            this.txtPrecio.TabIndex = 23;
             // 
             // Almacen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1082, 603);
-            this.Controls.Add(this.txtPrecioP);
+            this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.dtpFecha);
@@ -243,7 +235,6 @@
             this.Controls.Add(this.btnGuardarCambios);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.txtStock);
-            this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtCodigoP);
@@ -271,7 +262,6 @@
         private System.Windows.Forms.TextBox txtCodigoP;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.TextBox txtStock;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnGuardarCambios;
@@ -280,6 +270,6 @@
         private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnVolver;
-        private System.Windows.Forms.TextBox txtPrecioP;
+        private System.Windows.Forms.TextBox txtPrecio;
     }
 }
