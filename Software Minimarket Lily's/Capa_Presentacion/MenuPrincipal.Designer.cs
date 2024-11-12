@@ -96,7 +96,7 @@
             this.ptbVentas.Location = new System.Drawing.Point(61, 110);
             this.ptbVentas.Name = "ptbVentas";
             this.ptbVentas.Size = new System.Drawing.Size(247, 247);
-            this.ptbVentas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.ptbVentas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbVentas.TabIndex = 4;
             this.ptbVentas.TabStop = false;
             // 
@@ -106,7 +106,7 @@
             this.ptbAlmacen.Location = new System.Drawing.Point(434, 110);
             this.ptbAlmacen.Name = "ptbAlmacen";
             this.ptbAlmacen.Size = new System.Drawing.Size(247, 247);
-            this.ptbAlmacen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.ptbAlmacen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbAlmacen.TabIndex = 3;
             this.ptbAlmacen.TabStop = false;
             // 
