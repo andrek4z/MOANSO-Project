@@ -38,18 +38,21 @@
             // 
             // txtUser
             // 
+            this.txtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUser.Location = new System.Drawing.Point(189, 151);
             this.txtUser.Margin = new System.Windows.Forms.Padding(4);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(256, 22);
+            this.txtUser.Size = new System.Drawing.Size(256, 28);
             this.txtUser.TabIndex = 1;
             // 
             // txtPassword
             // 
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(189, 202);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(256, 22);
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(256, 28);
             this.txtPassword.TabIndex = 2;
             // 
             // label2
@@ -76,6 +79,7 @@
             // 
             // btnIngreso
             // 
+            this.btnIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngreso.Location = new System.Drawing.Point(221, 261);
             this.btnIngreso.Margin = new System.Windows.Forms.Padding(4);
             this.btnIngreso.Name = "btnIngreso";

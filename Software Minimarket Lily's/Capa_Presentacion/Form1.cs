@@ -30,10 +30,15 @@ namespace Capa_Presentacion
             if (user == "admin" && password == "Lavidaesunalenteja*")
             {
                 MessageBox.Show("Bienvenido a tiendas Lily's");
+                txtUser.Clear();
+                txtPassword.Clear();
+                txtUser.Focus();
             }
             else
             {
                 MessageBox.Show("Informacion Invalida, pruebe nuevamente");
+                txtPassword.Clear();
+                txtPassword.Focus();
             }
         }
     }
