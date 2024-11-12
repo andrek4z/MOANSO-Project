@@ -16,5 +16,23 @@ namespace Capa_Presentacion
         {
             InitializeComponent();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVolverMenu_Click(object sender, EventArgs e)
+        {
+
+            MenuPrincipal frm1 = new MenuPrincipal();
+            frm1.Show();
+            this.Close();
+        }
     }
 }

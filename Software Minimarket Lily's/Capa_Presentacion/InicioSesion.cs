@@ -34,6 +34,7 @@ namespace Capa_Presentacion
                 txtPassword.Clear();
                 MenuPrincipal menuPrincipal = new MenuPrincipal();
                 menuPrincipal.Show();
+                
                 //this.Hide();
             }
             else

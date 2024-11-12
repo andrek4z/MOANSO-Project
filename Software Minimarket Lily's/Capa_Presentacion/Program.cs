@@ -13,6 +13,7 @@ namespace Capa_Presentacion
         /// </summary>
         [STAThread]
         /// me la como entera nadie se entera ye ye ye
+        /// recordar que se sube con confirmar todo e insertar
         static void Main()
         {
             Application.EnableVisualStyles();
