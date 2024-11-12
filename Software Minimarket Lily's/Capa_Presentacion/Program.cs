@@ -12,6 +12,7 @@ namespace Capa_Presentacion
         /// Punto de entrada principal para la aplicación.
         /// </summary>
         [STAThread]
+        /// me la como entera nadie se entera ye ye ye
         static void Main()
         {
             Application.EnableVisualStyles();
