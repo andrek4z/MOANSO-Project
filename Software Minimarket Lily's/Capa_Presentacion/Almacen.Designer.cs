@@ -45,6 +45,7 @@
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
+            this.txtPrecioP = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,7 +65,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(19, 198);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(779, 368);
@@ -84,7 +85,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(429, 91);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(141, 22);
             this.txtNombre.TabIndex = 3;
@@ -103,7 +104,7 @@
             // txtCodigoP
             // 
             this.txtCodigoP.Location = new System.Drawing.Point(170, 89);
-            this.txtCodigoP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCodigoP.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigoP.Name = "txtCodigoP";
             this.txtCodigoP.Size = new System.Drawing.Size(146, 22);
             this.txtCodigoP.TabIndex = 7;
@@ -132,17 +133,15 @@
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(677, 91);
-            this.txtPrecio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPrecio.Location = new System.Drawing.Point(0, 0);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(65, 22);
-            this.txtPrecio.TabIndex = 10;
-            this.txtPrecio.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtPrecio.Size = new System.Drawing.Size(100, 22);
+            this.txtPrecio.TabIndex = 22;
             // 
             // txtStock
             // 
             this.txtStock.Location = new System.Drawing.Point(842, 91);
-            this.txtStock.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtStock.Margin = new System.Windows.Forms.Padding(4);
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(49, 22);
             this.txtStock.TabIndex = 12;
@@ -151,7 +150,7 @@
             // 
             this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.Location = new System.Drawing.Point(825, 256);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(4);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(205, 40);
             this.btnModificar.TabIndex = 13;
@@ -163,7 +162,7 @@
             // 
             this.btnGuardarCambios.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarCambios.Location = new System.Drawing.Point(825, 315);
-            this.btnGuardarCambios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGuardarCambios.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardarCambios.Name = "btnGuardarCambios";
             this.btnGuardarCambios.Size = new System.Drawing.Size(205, 40);
             this.btnGuardarCambios.TabIndex = 14;
@@ -175,7 +174,7 @@
             // 
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.Location = new System.Drawing.Point(825, 198);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(205, 40);
             this.btnAgregar.TabIndex = 16;
@@ -223,11 +222,19 @@
             this.btnVolver.UseVisualStyleBackColor = true;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
+            // txtPrecioP
+            // 
+            this.txtPrecioP.Location = new System.Drawing.Point(676, 91);
+            this.txtPrecioP.Name = "txtPrecioP";
+            this.txtPrecioP.Size = new System.Drawing.Size(64, 22);
+            this.txtPrecioP.TabIndex = 23;
+            // 
             // Almacen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1082, 603);
+            this.Controls.Add(this.txtPrecioP);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.dtpFecha);
@@ -245,7 +252,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Almacen";
             this.Text = "Almacen";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -273,5 +280,6 @@
         private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.TextBox txtPrecioP;
     }
 }
