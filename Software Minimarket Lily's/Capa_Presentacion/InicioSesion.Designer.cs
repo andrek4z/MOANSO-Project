@@ -34,7 +34,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnIngreso = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.SuspendLayout();
             // 
             // txtUser
@@ -100,24 +99,12 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "MiniMarket Lily\'s";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(540, 72);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(441, 463);
-            this.groupBox1.TabIndex = 7;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Elija una opcion:";
-            // 
             // InicioSesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1004, 556);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(554, 403);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnIngreso);
             this.Controls.Add(this.label3);
@@ -141,7 +128,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnIngreso;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 
