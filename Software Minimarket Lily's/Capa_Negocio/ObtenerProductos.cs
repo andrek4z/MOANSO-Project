@@ -11,10 +11,5 @@ namespace Capa_Negocio
     public class ProductoNegocio
     {
         private conexion datos = new conexion();
-
-        public DataTable ObtenerProductos()
-        {
-            return datos.ObtenerProductos();
-        }
     }
 }
