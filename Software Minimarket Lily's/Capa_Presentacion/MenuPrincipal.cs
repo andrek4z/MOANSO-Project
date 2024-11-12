@@ -59,12 +59,14 @@ namespace Capa_Presentacion
         {
             Ventas ventas = new Ventas();
             ventas.Show();
+            this.Close();
         }
 
         private void btnAlmacen_Click(object sender, EventArgs e)
         {
             Almacen almacen = new Almacen();
             almacen.Show();
+            this.Close();
         }
     }
 }
