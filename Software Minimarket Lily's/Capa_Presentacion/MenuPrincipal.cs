@@ -30,5 +30,12 @@ namespace Capa_Presentacion
             almacen.Show();
             this.Close();
         }
+
+        private void btnPedidos_Click(object sender, EventArgs e)
+        {
+            Pedidos pedidos = new Pedidos();
+            pedidos.Show();
+            this.Close();
+        }
     }
 }
