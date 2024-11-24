@@ -5,10 +5,11 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Capa_Entidades;
 
 namespace Capa_Datos
 {
-    internal class datCliente
+    public class datCliente
     {
         #region Singleton
         private static readonly datCliente _instancia = new datCliente();
