@@ -37,5 +37,10 @@ namespace Capa_Presentacion
             pedidos.Show();
             this.Close();
         }
+
+        private void MenuPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

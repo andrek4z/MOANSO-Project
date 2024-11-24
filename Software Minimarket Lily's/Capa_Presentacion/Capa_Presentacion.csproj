@@ -46,49 +46,58 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Almacen.cs">
+    <Compile Include="Diseño\Almacen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Almacen.Designer.cs">
+    <Compile Include="Diseño\Almacen.Designer.cs">
       <DependentUpon>Almacen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pedidos.cs">
+    <Compile Include="Diseño\Pedidos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pedidos.Designer.cs">
+    <Compile Include="Diseño\Pedidos.Designer.cs">
       <DependentUpon>Pedidos.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuPrincipal.cs">
+    <Compile Include="Diseño\MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuPrincipal.Designer.cs">
+    <Compile Include="Diseño\MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ventas.cs">
+    <Compile Include="Diseño\Ventas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ventas.Designer.cs">
+    <Compile Include="Diseño\Ventas.Designer.cs">
       <DependentUpon>Ventas.cs</DependentUpon>
     </Compile>
-    <Compile Include="InicioSesion.cs">
+    <Compile Include="Diseño\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InicioSesion.Designer.cs">
-      <DependentUpon>InicioSesion.cs</DependentUpon>
+    <Compile Include="Diseño\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diseño\Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diseño\Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Almacen.resx">
+    <EmbeddedResource Include="Diseño\Almacen.resx">
       <DependentUpon>Almacen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InicioSesion.resx">
-      <DependentUpon>InicioSesion.cs</DependentUpon>
+    <EmbeddedResource Include="Diseño\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuPrincipal.resx">
+    <EmbeddedResource Include="Diseño\MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pedidos.resx">
+    <EmbeddedResource Include="Diseño\Pedidos.resx">
       <DependentUpon>Pedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diseño\Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -100,7 +109,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Ventas.resx">
+    <EmbeddedResource Include="Diseño\Ventas.resx">
       <DependentUpon>Ventas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -137,6 +146,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Minimarket Lily%27s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vaaaaaa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vaca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LILYSS MINIIMAR.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

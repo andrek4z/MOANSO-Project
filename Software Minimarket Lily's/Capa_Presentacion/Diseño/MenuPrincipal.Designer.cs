@@ -43,9 +43,10 @@
             // btnVentas
             // 
             this.btnVentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVentas.Location = new System.Drawing.Point(39, 401);
+            this.btnVentas.Location = new System.Drawing.Point(29, 326);
+            this.btnVentas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVentas.Name = "btnVentas";
-            this.btnVentas.Size = new System.Drawing.Size(201, 53);
+            this.btnVentas.Size = new System.Drawing.Size(151, 43);
             this.btnVentas.TabIndex = 0;
             this.btnVentas.Text = "Ventas";
             this.btnVentas.UseVisualStyleBackColor = true;
@@ -54,9 +55,10 @@
             // btnAlmacen
             // 
             this.btnAlmacen.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAlmacen.Location = new System.Drawing.Point(341, 401);
+            this.btnAlmacen.Location = new System.Drawing.Point(256, 326);
+            this.btnAlmacen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAlmacen.Name = "btnAlmacen";
-            this.btnAlmacen.Size = new System.Drawing.Size(201, 53);
+            this.btnAlmacen.Size = new System.Drawing.Size(151, 43);
             this.btnAlmacen.TabIndex = 1;
             this.btnAlmacen.Text = "Almacen";
             this.btnAlmacen.UseVisualStyleBackColor = true;
@@ -65,9 +67,10 @@
             // btnPedidos
             // 
             this.btnPedidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPedidos.Location = new System.Drawing.Point(625, 401);
+            this.btnPedidos.Location = new System.Drawing.Point(469, 326);
+            this.btnPedidos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPedidos.Name = "btnPedidos";
-            this.btnPedidos.Size = new System.Drawing.Size(201, 53);
+            this.btnPedidos.Size = new System.Drawing.Size(151, 43);
             this.btnPedidos.TabIndex = 2;
             this.btnPedidos.Text = "Pedidos";
             this.btnPedidos.UseVisualStyleBackColor = true;
@@ -77,18 +80,20 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(34, 32);
+            this.label1.Location = new System.Drawing.Point(26, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(204, 29);
+            this.label1.Size = new System.Drawing.Size(162, 24);
             this.label1.TabIndex = 3;
             this.label1.Text = "Elige una Opción:";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Capa_Presentacion.Properties.Resources.almacen__1_;
-            this.pictureBox2.Location = new System.Drawing.Point(315, 84);
+            this.pictureBox2.Location = new System.Drawing.Point(236, 68);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(247, 247);
+            this.pictureBox2.Size = new System.Drawing.Size(185, 201);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
@@ -96,9 +101,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Capa_Presentacion.Properties.Resources.camion;
-            this.pictureBox3.Location = new System.Drawing.Point(600, 84);
+            this.pictureBox3.Location = new System.Drawing.Point(450, 68);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(247, 247);
+            this.pictureBox3.Size = new System.Drawing.Size(185, 201);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
@@ -106,18 +112,19 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Capa_Presentacion.Properties.Resources.ventas;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 84);
+            this.pictureBox1.Location = new System.Drawing.Point(16, 68);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(247, 247);
+            this.pictureBox1.Size = new System.Drawing.Size(185, 201);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
             // MenuPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(882, 503);
+            this.ClientSize = new System.Drawing.Size(689, 414);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
@@ -125,8 +132,10 @@
             this.Controls.Add(this.btnPedidos);
             this.Controls.Add(this.btnAlmacen);
             this.Controls.Add(this.btnVentas);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MenuPrincipal";
             this.Text = "Menu Principal";
+            this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

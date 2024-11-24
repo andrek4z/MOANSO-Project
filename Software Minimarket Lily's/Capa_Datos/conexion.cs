@@ -9,7 +9,26 @@ using System.Configuration;
 
 namespace Capa_Datos
 {
-    public class conexion
+    public class Conexion
+    {
+        private static readonly Conexion _instancia = new Conexion();
+
+        private readonly string connectionString = "Data Source=.; Initial Catalog = MinimarketLogistica_Normalizada;" + " Integrated Security = true";
+
+        private Conexion() { }
+
+        public static Conexion Instancia
+        {
+            get { return _instancia; }
+        }
+
+        public SqlConnection Conectar()
+        {
+            return new SqlConnection(connectionString);
+        }
+    }
+
+    /*public class conexion
     {
         public static SqlConnection Conectar()
         {
@@ -17,5 +36,5 @@ namespace Capa_Datos
             conex.ConnectionString = "Data Source = .; Initial Catalog = MinimarketLogistica_Normalizada;" + "Integrated Security = true";
             return conex;
         }
-    }
+    }*/
 }

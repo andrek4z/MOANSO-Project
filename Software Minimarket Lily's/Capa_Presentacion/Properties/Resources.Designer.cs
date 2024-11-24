@@ -103,9 +103,39 @@ namespace Capa_Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LILYSS_MINIIMAR {
+            get {
+                object obj = ResourceManager.GetObject("LILYSS MINIIMAR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Minimarket_Lily_s {
             get {
                 object obj = ResourceManager.GetObject("Minimarket Lily\'s", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vaaaaaa {
+            get {
+                object obj = ResourceManager.GetObject("vaaaaaa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vaca {
+            get {
+                object obj = ResourceManager.GetObject("vaca", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
