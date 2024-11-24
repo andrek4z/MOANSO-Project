@@ -27,14 +27,4 @@ namespace Capa_Datos
             return new SqlConnection(connectionString);
         }
     }
-
-    /*public class conexion
-    {
-        public static SqlConnection Conectar()
-        {
-            SqlConnection conex = new SqlConnection();
-            conex.ConnectionString = "Data Source = .; Initial Catalog = MinimarketLogistica_Normalizada;" + "Integrated Security = true";
-            return conex;
-        }
-    }*/
 }
