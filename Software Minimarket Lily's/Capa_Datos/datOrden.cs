@@ -163,34 +163,34 @@ namespace Capa_Datos
                 throw new Exception("Error al actualizar el estado: " + ex.Message);
             }
         }
-        public string GenerarIdOrden()
-        {
-            try
-            {
-                using (SqlConnection cn = Conexion.Instancia.Conectar())
-                {
-                    using (SqlCommand cmd = new SqlCommand("spGenerarIdOrden", cn))
-                    {
-                        cmd.CommandType = CommandType.StoredProcedure;
+        //public string GenerarIdOrden()
+        //{
+        //    try
+        //    {
+        //        using (SqlConnection cn = Conexion.Instancia.Conectar())
+        //        {
+        //            using (SqlCommand cmd = new SqlCommand("spGenerarIdOrden", cn))
+        //            {
+        //                cmd.CommandType = CommandType.StoredProcedure;
 
-                        SqlParameter paramNuevoId = new SqlParameter("@nuevoId", SqlDbType.NVarChar, 10)
-                        {
-                            Direction = ParameterDirection.Output
-                        };
-                        cmd.Parameters.Add(paramNuevoId);
+        //                SqlParameter paramNuevoId = new SqlParameter("@nuevoId", SqlDbType.NVarChar, 10)
+        //                {
+        //                    Direction = ParameterDirection.Output
+        //                };
+        //                cmd.Parameters.Add(paramNuevoId);
 
-                        cn.Open();
-                        cmd.ExecuteNonQuery();
+        //                cn.Open();
+        //                cmd.ExecuteNonQuery();
 
-                        return paramNuevoId.Value.ToString();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Error al generar el ID de la orden: " + ex.Message);
-            }
-        }
+        //                return paramNuevoId.Value.ToString();
+        //            }
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw new Exception("Error al generar el ID de la orden: " + ex.Message);
+        //    }
+        //}
 
         public void ModificarDetalle(entDetalleOrden detalle)
         {

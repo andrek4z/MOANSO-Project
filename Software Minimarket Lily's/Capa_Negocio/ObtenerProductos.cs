@@ -10,6 +10,6 @@ namespace Capa_Negocio
 {
     public class ProductoNegocio
     {
-        private conexion datos = new conexion();
+        //private conexion datos = new conexion();
     }
 }

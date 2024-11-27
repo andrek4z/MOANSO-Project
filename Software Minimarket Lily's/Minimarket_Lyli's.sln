@@ -5,13 +5,13 @@ VisualStudioVersion = 17.11.35219.272
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capa_Presentacion", "Capa_Presentacion\Capa_Presentacion.csproj", "{A4D60644-A4FF-413C-BF89-35C9170C7A97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capa_Negocio", "Capa_Negocio\Capa_Negocio.csproj", "{B863D29A-1947-487C-B038-5512C290B0F8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capa_Logica", "Capa_Negocio\Capa_Logica.csproj", "{B863D29A-1947-487C-B038-5512C290B0F8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capa_Datos", "Capa_Datos\Capa_Datos.csproj", "{B69F2E58-059C-419A-85E1-394486E2BB27}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capa_Entidades", "Capa_Entidades\Capa_Entidades.csproj", "{7DA03B78-AB97-496B-9FEF-C3C6C422A458}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capa_Logica", "Capa_Logica\Capa_Logica.csproj", "{7BB37B4D-520C-4040-8506-BAEE2CCCB096}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capa_Logic", "Capa_Logica\Capa_Logic.csproj", "{7BB37B4D-520C-4040-8506-BAEE2CCCB096}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

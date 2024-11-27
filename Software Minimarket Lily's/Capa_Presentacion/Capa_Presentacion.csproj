@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -130,9 +131,9 @@
       <Project>{7da03b78-ab97-496b-9fef-c3c6c422a458}</Project>
       <Name>Capa_Entidades</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Capa_Negocio\Capa_Negocio.csproj">
+    <ProjectReference Include="..\Capa_Negocio\Capa_Logica.csproj">
       <Project>{b863d29a-1947-487c-b038-5512c290b0f8}</Project>
-      <Name>Capa_Negocio</Name>
+      <Name>Capa_Logica</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

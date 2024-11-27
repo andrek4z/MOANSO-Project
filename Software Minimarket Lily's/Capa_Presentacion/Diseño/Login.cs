@@ -34,7 +34,26 @@ namespace Capa_Presentacion
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Ingresar();
+        }
 
+        private void txtContra_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                Ingresar();
+            }
+        }
+
+        private void Ingresar ()
+        {
+            if (txtUsuario.Text == "Admin" && txtContra.Text == "12345")
+            {
+                MenuPrincipal frm = new MenuPrincipal();
+                frm.Show();
+
+                this.Hide();
+            }
         }
     }
 }
