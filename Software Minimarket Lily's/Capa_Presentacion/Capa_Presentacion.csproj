@@ -77,12 +77,6 @@
     <Compile Include="Diseño\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Diseño\Inicio.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Diseño\Inicio.Designer.cs">
-      <DependentUpon>Inicio.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Diseño\Almacen.resx">
@@ -96,9 +90,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Diseño\Pedidos.resx">
       <DependentUpon>Pedidos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Diseño\Inicio.resx">
-      <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -156,6 +147,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LILYSS MINIIMAR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LUPA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vaquita.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

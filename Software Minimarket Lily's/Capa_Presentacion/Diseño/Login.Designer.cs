@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtContra = new System.Windows.Forms.TextBox();
             this.btnAcceder = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -49,26 +49,6 @@
             this.label1.Size = new System.Drawing.Size(266, 41);
             this.label1.TabIndex = 4;
             this.label1.Text = "Iniciar Seccion";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Capa_Presentacion.Properties.Resources.LILYSS_MINIIMAR;
-            this.pictureBox2.Location = new System.Drawing.Point(65, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(202, 228);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Capa_Presentacion.Properties.Resources.vaaaaaa;
-            this.pictureBox1.Location = new System.Drawing.Point(343, -42);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(959, 589);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // txtUsuario
             // 
@@ -117,6 +97,26 @@
             this.label3.Size = new System.Drawing.Size(61, 13);
             this.label3.TabIndex = 10;
             this.label3.Text = "Contraseña";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Capa_Presentacion.Properties.Resources.LILYSS_MINIIMAR;
+            this.pictureBox2.Location = new System.Drawing.Point(65, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(202, 228);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Capa_Presentacion.Properties.Resources.vaquita;
+            this.pictureBox1.Location = new System.Drawing.Point(319, -2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(734, 547);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // Login
             // 

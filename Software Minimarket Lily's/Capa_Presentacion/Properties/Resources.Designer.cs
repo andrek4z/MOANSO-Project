@@ -113,6 +113,16 @@ namespace Capa_Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LUPA {
+            get {
+                object obj = ResourceManager.GetObject("LUPA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Minimarket_Lily_s {
             get {
                 object obj = ResourceManager.GetObject("Minimarket Lily\'s", resourceCulture);
@@ -136,6 +146,16 @@ namespace Capa_Presentacion.Properties {
         internal static System.Drawing.Bitmap vaca {
             get {
                 object obj = ResourceManager.GetObject("vaca", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vaquita {
+            get {
+                object obj = ResourceManager.GetObject("vaquita", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
