@@ -1,6 +1,6 @@
 USE [master]
 GO
-/****** Object:  Database [MinimarketLogistica_Normalizada]    Script Date: 27/11/2024 02:35:59 ******/
+/****** Object:  Database [MinimarketLogistica_Normalizada]    Script Date: 27/11/2024 21:17:00 ******/
 CREATE DATABASE [MinimarketLogistica_Normalizada]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -84,7 +84,7 @@ ALTER DATABASE [MinimarketLogistica_Normalizada] SET QUERY_STORE (OPERATION_MODE
 GO
 USE [MinimarketLogistica_Normalizada]
 GO
-/****** Object:  Table [dbo].[Cliente]    Script Date: 27/11/2024 02:35:59 ******/
+/****** Object:  Table [dbo].[Cliente]    Script Date: 27/11/2024 21:17:00 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -103,7 +103,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Comprobante]    Script Date: 27/11/2024 02:35:59 ******/
+/****** Object:  Table [dbo].[Comprobante]    Script Date: 27/11/2024 21:17:00 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -124,7 +124,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[DetalleOrden]    Script Date: 27/11/2024 02:35:59 ******/
+/****** Object:  Table [dbo].[DetalleOrden]    Script Date: 27/11/2024 21:17:00 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -144,7 +144,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Orden]    Script Date: 27/11/2024 02:35:59 ******/
+/****** Object:  Table [dbo].[Orden]    Script Date: 27/11/2024 21:17:00 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -159,7 +159,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Producto]    Script Date: 27/11/2024 02:35:59 ******/
+/****** Object:  Table [dbo].[Producto]    Script Date: 27/11/2024 21:17:00 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -176,7 +176,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Proveedor]    Script Date: 27/11/2024 02:35:59 ******/
+/****** Object:  Table [dbo].[Proveedor]    Script Date: 27/11/2024 21:17:00 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -195,10 +195,142 @@ CREATE TABLE [dbo].[Proveedor](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
+INSERT [dbo].[Cliente] ([idCliente], [razonSocial], [dni], [numero], [correo], [fecRegCliente], [estCliente]) VALUES (1, N'Lucas Martínez', 70452319, 901234567, N' lucas.martinez@gmail.com', CAST(N'2023-01-15T00:00:00.000' AS DateTime), 1)
+GO
+INSERT [dbo].[Cliente] ([idCliente], [razonSocial], [dni], [numero], [correo], [fecRegCliente], [estCliente]) VALUES (2, N'Sofía Gómez', 71289456, 912345678, N'sofia.gomez@hotmail.com', CAST(N'2023-02-20T00:00:00.000' AS DateTime), 1)
+GO
+INSERT [dbo].[Cliente] ([idCliente], [razonSocial], [dni], [numero], [correo], [fecRegCliente], [estCliente]) VALUES (3, N'Mateo López', 72345678, 923456789, N'mateo.lopez@gmail.com', CAST(N'2023-03-10T00:00:00.000' AS DateTime), 0)
+GO
+INSERT [dbo].[Cliente] ([idCliente], [razonSocial], [dni], [numero], [correo], [fecRegCliente], [estCliente]) VALUES (4, N'Valentina Torres', 73456789, 934567890, N'valentina.torres@hotmail.com', CAST(N'2023-01-16T00:00:00.000' AS DateTime), 1)
+GO
+INSERT [dbo].[Cliente] ([idCliente], [razonSocial], [dni], [numero], [correo], [fecRegCliente], [estCliente]) VALUES (5, N'Alejandro Ramírez', 74561234, 945678901, N'alejandro.ramirez@gmail.com', CAST(N'2023-02-24T00:00:00.000' AS DateTime), 0)
+GO
+INSERT [dbo].[Cliente] ([idCliente], [razonSocial], [dni], [numero], [correo], [fecRegCliente], [estCliente]) VALUES (6, N'Camila Morales', 75678901, 956789012, N'camila.morales@hotmail.com', CAST(N'2023-03-14T00:00:00.000' AS DateTime), 0)
+GO
+INSERT [dbo].[Cliente] ([idCliente], [razonSocial], [dni], [numero], [correo], [fecRegCliente], [estCliente]) VALUES (7, N'Diego Fernández', 76789012, 967890123, N' diego.fernandez@gmail.com', CAST(N'2023-01-13T00:00:00.000' AS DateTime), 1)
+GO
+INSERT [dbo].[Cliente] ([idCliente], [razonSocial], [dni], [numero], [correo], [fecRegCliente], [estCliente]) VALUES (8, N'Isabella Ruiz', 77890123, 978901234, N'isabella.ruiz@hotmail.com', CAST(N'2023-02-21T00:00:00.000' AS DateTime), 0)
+GO
+INSERT [dbo].[Cliente] ([idCliente], [razonSocial], [dni], [numero], [correo], [fecRegCliente], [estCliente]) VALUES (9, N'Sebastián Herrera', 78901234, 989012345, N' sebastian.herrera@gmail.com', CAST(N'2023-03-12T00:00:00.000' AS DateTime), 0)
+GO
+INSERT [dbo].[Cliente] ([idCliente], [razonSocial], [dni], [numero], [correo], [fecRegCliente], [estCliente]) VALUES (10, N'Emilia Ortega', 79123456, 990123456, N'emilia.ortega@hotmail.com', CAST(N'2023-01-10T00:00:00.000' AS DateTime), 1)
+GO
+INSERT [dbo].[Cliente] ([idCliente], [razonSocial], [dni], [numero], [correo], [fecRegCliente], [estCliente]) VALUES (11, N'Nicolás Castro', 70234567, 987654321, N'nicolas.castro@gmail.com', CAST(N'2023-02-18T00:00:00.000' AS DateTime), 1)
+GO
+INSERT [dbo].[Cliente] ([idCliente], [razonSocial], [dni], [numero], [correo], [fecRegCliente], [estCliente]) VALUES (12, N'Martina Sánchez', 71345678, 976543210, N' martina.sanchez@hotmail.com', CAST(N'2023-03-23T00:00:00.000' AS DateTime), 1)
+GO
+INSERT [dbo].[Comprobante] ([idComprobante], [idVenta], [nombreCliente], [direccion], [tipoComprobante], [dni], [ruc], [fechaEmision], [estado]) VALUES (1, 1001, N'Carlos Pérez', N'Av. Central 123', N'Factura', NULL, 10023456789, CAST(N'2023-04-01T00:00:00.000' AS DateTime), 1)
+GO
+INSERT [dbo].[Comprobante] ([idComprobante], [idVenta], [nombreCliente], [direccion], [tipoComprobante], [dni], [ruc], [fechaEmision], [estado]) VALUES (2, 1002, N'Ana Ramírez', N'Calle Cristal 456', N'Boleta', 70123456, NULL, CAST(N'2023-04-05T00:00:00.000' AS DateTime), 1)
+GO
+INSERT [dbo].[Comprobante] ([idComprobante], [idVenta], [nombreCliente], [direccion], [tipoComprobante], [dni], [ruc], [fechaEmision], [estado]) VALUES (3, 1003, N'Luis González', N'Av. Sol Naciente 789', N'Factura', NULL, 11034567890, CAST(N'2023-04-08T00:00:00.000' AS DateTime), 1)
+GO
+INSERT [dbo].[Comprobante] ([idComprobante], [idVenta], [nombreCliente], [direccion], [tipoComprobante], [dni], [ruc], [fechaEmision], [estado]) VALUES (4, 1004, N'Mariana Torres', N'Calle Luna 321', N'Boleta', 71234567, NULL, CAST(N'2023-04-10T00:00:00.000' AS DateTime), 1)
+GO
+INSERT [dbo].[Comprobante] ([idComprobante], [idVenta], [nombreCliente], [direccion], [tipoComprobante], [dni], [ruc], [fechaEmision], [estado]) VALUES (5, 1005, N'David Herrera', N'Av. Las Flores 567', N'Factura', NULL, 12045678901, CAST(N'2023-04-15T00:00:00.000' AS DateTime), 1)
+GO
+INSERT [dbo].[Comprobante] ([idComprobante], [idVenta], [nombreCliente], [direccion], [tipoComprobante], [dni], [ruc], [fechaEmision], [estado]) VALUES (6, 1006, N'Lucía Fernández', N'Calle del Sol 111', N'Boleta', 72345678, NULL, CAST(N'2023-04-18T00:00:00.000' AS DateTime), 0)
+GO
+INSERT [dbo].[Comprobante] ([idComprobante], [idVenta], [nombreCliente], [direccion], [tipoComprobante], [dni], [ruc], [fechaEmision], [estado]) VALUES (7, 1007, N'Andrés Morales', N'Av. Libertad 678', N'Factura', NULL, 13056789012, CAST(N'2023-04-20T00:00:00.000' AS DateTime), 0)
+GO
+INSERT [dbo].[Comprobante] ([idComprobante], [idVenta], [nombreCliente], [direccion], [tipoComprobante], [dni], [ruc], [fechaEmision], [estado]) VALUES (8, 1008, N'Paula Rojas', N'Calle Estrella 999', N'Boleta', 73456789, NULL, CAST(N'2023-04-22T00:00:00.000' AS DateTime), 1)
+GO
+INSERT [dbo].[Comprobante] ([idComprobante], [idVenta], [nombreCliente], [direccion], [tipoComprobante], [dni], [ruc], [fechaEmision], [estado]) VALUES (9, 1009, N'Javier Castillo', N'Av. Aurora 456', N'Factura', NULL, 14067890123, CAST(N'2023-04-25T00:00:00.000' AS DateTime), 0)
+GO
+INSERT [dbo].[Comprobante] ([idComprobante], [idVenta], [nombreCliente], [direccion], [tipoComprobante], [dni], [ruc], [fechaEmision], [estado]) VALUES (10, 1010, N'Sofía Vargas', N'Calle Mar 222', N'Boleta', 74567890, NULL, CAST(N'2023-04-28T00:00:00.000' AS DateTime), 1)
+GO
+INSERT [dbo].[Comprobante] ([idComprobante], [idVenta], [nombreCliente], [direccion], [tipoComprobante], [dni], [ruc], [fechaEmision], [estado]) VALUES (11, 1011, N'Miguel Soto', N'Av. Norte 333', N'Factura', NULL, 15078901234, CAST(N'2023-04-30T00:00:00.000' AS DateTime), 1)
+GO
+INSERT [dbo].[Comprobante] ([idComprobante], [idVenta], [nombreCliente], [direccion], [tipoComprobante], [dni], [ruc], [fechaEmision], [estado]) VALUES (12, 1012, N'Laura Méndez', N'Calle Sur 444', N'Boleta', 75678901, NULL, CAST(N'2023-05-02T00:00:00.000' AS DateTime), 1)
+GO
+INSERT [dbo].[DetalleOrden] ([idDetalleOrden], [idOrden], [idProducto], [producto], [cantidad], [precioUnitario], [subtotal], [estado]) VALUES (1, N'N001', 101, N'Inkacola 300ml', 2, CAST(1.50 AS Decimal(18, 2)), CAST(3.00 AS Decimal(18, 2)), N'Elegido')
+GO
+INSERT [dbo].[DetalleOrden] ([idDetalleOrden], [idOrden], [idProducto], [producto], [cantidad], [precioUnitario], [subtotal], [estado]) VALUES (2, N'N002', 102, N'Inkacola 500ml', 5, CAST(3.00 AS Decimal(18, 2)), CAST(15.00 AS Decimal(18, 2)), N'Elegido')
+GO
+INSERT [dbo].[Orden] ([idOrden], [fecha], [total]) VALUES (N'N001', CAST(N'2023-05-01T00:00:00.000' AS DateTime), CAST(3.00 AS Decimal(18, 2)))
+GO
+INSERT [dbo].[Orden] ([idOrden], [fecha], [total]) VALUES (N'N002', CAST(N'2023-05-03T00:00:00.000' AS DateTime), CAST(15.00 AS Decimal(18, 2)))
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (101, N'Inkacola 300ml ', N'10', CAST(1.50 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (102, N'Inkacola 500ml', N'20', CAST(3.00 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (103, N'Inkacola 1L', N'50', CAST(4.50 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (104, N'Inkacola 1.5L', N'10', CAST(6.50 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (105, N'Cocacola 300ml', N'20', CAST(1.50 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (106, N'Cocacola 500ml', N'50', CAST(3.00 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (107, N'Cocacola 1L', N'10', CAST(4.50 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (108, N'Cocacola 1.5L', N'20', CAST(6.50 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (109, N'Lenteja 1/5', N'50', CAST(1.50 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (110, N'Arberja 1/5', N'10', CAST(1.50 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (111, N'Canchita 1/5', N'20', CAST(1.50 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (112, N'Cepillo Kolinos', N'50', CAST(3.20 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (113, N'Cepillo Colgate', N'10', CAST(2.80 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (114, N'Cepillo OralB', N'20', CAST(2.50 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (115, N'PH Paracas x 4', N'50', CAST(4.50 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (116, N'PH Paracas x 2', N'10', CAST(2.00 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (117, N'PH Elite x 4', N'20', CAST(5.00 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (118, N'PH Elite x 2', N'50', CAST(2.80 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (119, N'PH Suave x 4', N'10', CAST(4.70 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (120, N'PH Suave x 2', N'20', CAST(2.60 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (121, N'Queso Edam Laive', N'50', CAST(4.50 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (122, N'Queso Parmesano Laive', N'20', CAST(5.40 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (123, N'Queso Cheddar Laive', N'50', CAST(9.00 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (124, N'Mantequilla Gloria 100g', N'20', CAST(6.00 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (125, N'Mantequilla Gloria 200g', N'50', CAST(11.40 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (126, N'Mantequilla Gloria s/s 200g', N'20', CAST(11.60 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (127, N'Galleta Soda GN', N'50', CAST(0.50 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (128, N'Galleta Soda V', N'20', CAST(1.00 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (129, N'Galleta Soda San Jorge', N'50', CAST(0.70 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (130, N'Galleta Rellenita', N'20', CAST(0.60 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (131, N'Galleta Rellenita Xl', N'50', CAST(1.50 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (132, N'Pasta Dental Dento', N'20', CAST(4.50 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Producto] ([idProducto], [nombre], [cantidad], [precio], [estado]) VALUES (133, N'Pasta Dental Kolinos', N'50', CAST(4.00 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Proveedor] ([idProveedor], [nombre], [telefono], [ruc], [direccion], [fecRegProveedor], [estProveedor]) VALUES (1, N'Rintisa', 987654321, 11234567890, N'Av. Industrial 789', CAST(N'2023-01-10T00:00:00.000' AS DateTime), 1)
+GO
+INSERT [dbo].[Proveedor] ([idProveedor], [nombre], [telefono], [ruc], [direccion], [fecRegProveedor], [estProveedor]) VALUES (2, N'Danlac Company', 988874556, 10123456789, N'Calle Comercial 321', CAST(N'2023-02-15T00:00:00.000' AS DateTime), 1)
+GO
+INSERT [dbo].[Proveedor] ([idProveedor], [nombre], [telefono], [ruc], [direccion], [fecRegProveedor], [estProveedor]) VALUES (3, N'Codigisa S.A', 987444321, 19012345678, N'Av. Abancay 329', CAST(N'2023-01-13T00:00:00.000' AS DateTime), 1)
+GO
+INSERT [dbo].[Proveedor] ([idProveedor], [nombre], [telefono], [ruc], [direccion], [fecRegProveedor], [estProveedor]) VALUES (4, N'CopyVenta', 999997844, 18001234567, N'Calle Capon 521', CAST(N'2023-02-16T00:00:00.000' AS DateTime), 1)
+GO
+INSERT [dbo].[Proveedor] ([idProveedor], [nombre], [telefono], [ruc], [direccion], [fecRegProveedor], [estProveedor]) VALUES (5, N'Pepsico Company', 923654324, 17090123456, N'Av. Ingenio 199', CAST(N'2023-01-20T00:00:00.000' AS DateTime), 1)
+GO
 ALTER TABLE [dbo].[DetalleOrden]  WITH CHECK ADD FOREIGN KEY([idOrden])
 REFERENCES [dbo].[Orden] ([idOrden])
 GO
-/****** Object:  StoredProcedure [dbo].[spActualizarEstadoDetalle]    Script Date: 27/11/2024 02:35:59 ******/
+/****** Object:  StoredProcedure [dbo].[spActualizarEstadoDetalle]    Script Date: 27/11/2024 21:17:00 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -211,7 +343,7 @@ BEGIN
     FROM [dbo].[DetalleOrden];
 END;
 GO
-/****** Object:  StoredProcedure [dbo].[spAnularComprobante]    Script Date: 27/11/2024 02:35:59 ******/
+/****** Object:  StoredProcedure [dbo].[spAnularComprobante]    Script Date: 27/11/2024 21:17:00 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -224,7 +356,7 @@ BEGIN
     FROM [dbo].[Comprobante];
 END;
 GO
-/****** Object:  StoredProcedure [dbo].[spDeshabilitaCliente]    Script Date: 27/11/2024 02:35:59 ******/
+/****** Object:  StoredProcedure [dbo].[spDeshabilitaCliente]    Script Date: 27/11/2024 21:17:00 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -236,7 +368,7 @@ BEGIN
     FROM [dbo].[Cliente];
 END;
 GO
-/****** Object:  StoredProcedure [dbo].[spDeshabilitaProveedor]    Script Date: 27/11/2024 02:35:59 ******/
+/****** Object:  StoredProcedure [dbo].[spDeshabilitaProveedor]    Script Date: 27/11/2024 21:17:00 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -249,7 +381,7 @@ BEGIN
     FROM [dbo].[Proveedor];
 END;
 GO
-/****** Object:  StoredProcedure [dbo].[spEditaCliente]    Script Date: 27/11/2024 02:35:59 ******/
+/****** Object:  StoredProcedure [dbo].[spEditaCliente]    Script Date: 27/11/2024 21:17:00 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -267,7 +399,7 @@ BEGIN
     FROM [dbo].[Cliente];
 END;
 GO
-/****** Object:  StoredProcedure [dbo].[spEditaProveedor]    Script Date: 27/11/2024 02:35:59 ******/
+/****** Object:  StoredProcedure [dbo].[spEditaProveedor]    Script Date: 27/11/2024 21:17:00 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -280,7 +412,7 @@ BEGIN
     FROM [dbo].[Proveedor];
 END;
 GO
-/****** Object:  StoredProcedure [dbo].[spInhabilitarDetalleOrden]    Script Date: 27/11/2024 02:35:59 ******/
+/****** Object:  StoredProcedure [dbo].[spInhabilitarDetalleOrden]    Script Date: 27/11/2024 21:17:00 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -293,7 +425,7 @@ BEGIN
     FROM [dbo].[DetalleOrden];
 END;
 GO
-/****** Object:  StoredProcedure [dbo].[spInhabilitarProducto]    Script Date: 27/11/2024 02:35:59 ******/
+/****** Object:  StoredProcedure [dbo].[spInhabilitarProducto]    Script Date: 27/11/2024 21:17:00 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -306,7 +438,7 @@ BEGIN
     FROM [dbo].[Producto];
 END;
 GO
-/****** Object:  StoredProcedure [dbo].[spInsertaCliente]    Script Date: 27/11/2024 02:35:59 ******/
+/****** Object:  StoredProcedure [dbo].[spInsertaCliente]    Script Date: 27/11/2024 21:17:00 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -323,7 +455,7 @@ BEGIN
     FROM [dbo].[Cliente];
 END;
 GO
-/****** Object:  StoredProcedure [dbo].[spInsertaProveedor]    Script Date: 27/11/2024 02:35:59 ******/
+/****** Object:  StoredProcedure [dbo].[spInsertaProveedor]    Script Date: 27/11/2024 21:17:00 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -336,7 +468,7 @@ BEGIN
     FROM [dbo].[Proveedor];
 END;
 GO
-/****** Object:  StoredProcedure [dbo].[spInsertarComprobante]    Script Date: 27/11/2024 02:35:59 ******/
+/****** Object:  StoredProcedure [dbo].[spInsertarComprobante]    Script Date: 27/11/2024 21:17:00 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -349,7 +481,7 @@ BEGIN
     FROM [dbo].[Comprobante];
 END;
 GO
-/****** Object:  StoredProcedure [dbo].[spInsertarDetalleOrden]    Script Date: 27/11/2024 02:35:59 ******/
+/****** Object:  StoredProcedure [dbo].[spInsertarDetalleOrden]    Script Date: 27/11/2024 21:17:00 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -366,7 +498,7 @@ BEGIN
     FROM [dbo].[DetalleOrden];
 END;
 GO
-/****** Object:  StoredProcedure [dbo].[spInsertarProducto]    Script Date: 27/11/2024 02:35:59 ******/
+/****** Object:  StoredProcedure [dbo].[spInsertarProducto]    Script Date: 27/11/2024 21:17:00 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -379,7 +511,7 @@ BEGIN
     FROM [dbo].[Producto];
 END;
 GO
-/****** Object:  StoredProcedure [dbo].[spListaCliente]    Script Date: 27/11/2024 02:35:59 ******/
+/****** Object:  StoredProcedure [dbo].[spListaCliente]    Script Date: 27/11/2024 21:17:00 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -392,7 +524,7 @@ BEGIN
     FROM [dbo].[Cliente];
 END;
 GO
-/****** Object:  StoredProcedure [dbo].[spListaProveedor]    Script Date: 27/11/2024 02:35:59 ******/
+/****** Object:  StoredProcedure [dbo].[spListaProveedor]    Script Date: 27/11/2024 21:17:00 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -405,7 +537,7 @@ BEGIN
     FROM [dbo].[Proveedor];
 END;
 GO
-/****** Object:  StoredProcedure [dbo].[spListarComprobantes]    Script Date: 27/11/2024 02:35:59 ******/
+/****** Object:  StoredProcedure [dbo].[spListarComprobantes]    Script Date: 27/11/2024 21:17:00 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -418,7 +550,7 @@ BEGIN
     FROM [dbo].[Comprobante];
 END;
 GO
-/****** Object:  StoredProcedure [dbo].[spListarDetalleOrden]    Script Date: 27/11/2024 02:35:59 ******/
+/****** Object:  StoredProcedure [dbo].[spListarDetalleOrden]    Script Date: 27/11/2024 21:17:00 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -437,7 +569,7 @@ BEGIN
     FROM [dbo].[DetalleOrden];
 END;
 GO
-/****** Object:  StoredProcedure [dbo].[spListarProductos]    Script Date: 27/11/2024 02:35:59 ******/
+/****** Object:  StoredProcedure [dbo].[spListarProductos]    Script Date: 27/11/2024 21:17:00 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -454,7 +586,7 @@ BEGIN
     FROM [dbo].[Producto];
 END;
 GO
-/****** Object:  StoredProcedure [dbo].[spModificarDetalleOrden]    Script Date: 27/11/2024 02:35:59 ******/
+/****** Object:  StoredProcedure [dbo].[spModificarDetalleOrden]    Script Date: 27/11/2024 21:17:00 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -467,7 +599,7 @@ BEGIN
     FROM [dbo].[DetalleOrden];
 END;
 GO
-/****** Object:  StoredProcedure [dbo].[spModificarProducto]    Script Date: 27/11/2024 02:35:59 ******/
+/****** Object:  StoredProcedure [dbo].[spModificarProducto]    Script Date: 27/11/2024 21:17:00 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -480,7 +612,7 @@ BEGIN
     FROM [dbo].[Producto];
 END;
 GO
-/****** Object:  StoredProcedure [dbo].[spRegistrarOrden]    Script Date: 27/11/2024 02:35:59 ******/
+/****** Object:  StoredProcedure [dbo].[spRegistrarOrden]    Script Date: 27/11/2024 21:17:00 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
