@@ -21,6 +21,7 @@ namespace Capa_Presentacion
         {
             Ventas ventas = new Ventas();
             ventas.Show();
+            this.Close();
             
         }
 
@@ -28,6 +29,7 @@ namespace Capa_Presentacion
         {
             Almacen almacen = new Almacen();
             almacen.Show();
+            this.Close();
            
         }
 

@@ -13,7 +13,7 @@ namespace Capa_Datos
     {
         private static readonly Conexion _instancia = new Conexion();
 
-        private readonly string connectionString = "Data Source=DESKTOP-5J5OED0\\SQLEXPRESS; Initial Catalog = MinimarketLogistica_Normalizada;" + " Integrated Security = true";
+        private readonly string connectionString = "Data Source=DESKTOP-IUJ7JJ5; Initial Catalog = MinimarketLogistica_Normalizada;" + " Integrated Security = true";
 
         private Conexion() { }
 

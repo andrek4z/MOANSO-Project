@@ -84,7 +84,7 @@
             // txtCodigoProducto
             // 
             this.txtCodigoProducto.Location = new System.Drawing.Point(95, 81);
-            this.txtCodigoProducto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCodigoProducto.Margin = new System.Windows.Forms.Padding(2);
             this.txtCodigoProducto.Name = "txtCodigoProducto";
             this.txtCodigoProducto.Size = new System.Drawing.Size(403, 20);
             this.txtCodigoProducto.TabIndex = 4;
@@ -93,7 +93,7 @@
             // 
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.Location = new System.Drawing.Point(488, 270);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(150, 34);
             this.btnAgregar.TabIndex = 7;
@@ -105,7 +105,7 @@
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Location = new System.Drawing.Point(15, 519);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(138, 35);
             this.btnCancelar.TabIndex = 9;
@@ -117,7 +117,7 @@
             // 
             this.btnCobrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCobrar.Location = new System.Drawing.Point(501, 519);
-            this.btnCobrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCobrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCobrar.Name = "btnCobrar";
             this.btnCobrar.Size = new System.Drawing.Size(138, 35);
             this.btnCobrar.TabIndex = 10;
@@ -136,12 +136,13 @@
             this.label5.Size = new System.Drawing.Size(173, 25);
             this.label5.TabIndex = 11;
             this.label5.Text = "Total Pagar:   S/.";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // btnVolver
             // 
             this.btnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolver.Location = new System.Drawing.Point(535, 26);
-            this.btnVolver.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(2);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(102, 35);
             this.btnVolver.TabIndex = 13;
@@ -153,7 +154,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(14, 119);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -176,7 +177,7 @@
             // txtCantidadP
             // 
             this.txtCantidadP.Location = new System.Drawing.Point(415, 286);
-            this.txtCantidadP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCantidadP.Margin = new System.Windows.Forms.Padding(2);
             this.txtCantidadP.Name = "txtCantidadP";
             this.txtCantidadP.Size = new System.Drawing.Size(56, 20);
             this.txtCantidadP.TabIndex = 6;
@@ -205,7 +206,7 @@
             this.CnPrecio,
             this.CnImporte});
             this.dataGridView2.Location = new System.Drawing.Point(15, 332);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowHeadersWidth = 51;
@@ -291,23 +292,22 @@
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblTotal.Location = new System.Drawing.Point(577, 472);
+            this.lblTotal.Location = new System.Drawing.Point(574, 468);
             this.lblTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(17, 20);
+            this.lblTotal.Size = new System.Drawing.Size(0, 20);
             this.lblTotal.TabIndex = 20;
-            this.lblTotal.Text = "..";
             this.lblTotal.Click += new System.EventHandler(this.lblTotal_Click);
             // 
             // btnTotal
             // 
             this.btnTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTotal.Location = new System.Drawing.Point(255, 460);
+            this.btnTotal.Location = new System.Drawing.Point(229, 465);
             this.btnTotal.Margin = new System.Windows.Forms.Padding(2);
             this.btnTotal.Name = "btnTotal";
             this.btnTotal.Size = new System.Drawing.Size(138, 35);
             this.btnTotal.TabIndex = 21;
-            this.btnTotal.Text = "Cobrar";
+            this.btnTotal.Text = "CalcularTotal";
             this.btnTotal.UseVisualStyleBackColor = true;
             this.btnTotal.Click += new System.EventHandler(this.btnTotal_Click);
             // 
@@ -335,7 +335,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Ventas";
             this.Text = "Registro de Ventas";
             this.Load += new System.EventHandler(this.Ventas_Load);

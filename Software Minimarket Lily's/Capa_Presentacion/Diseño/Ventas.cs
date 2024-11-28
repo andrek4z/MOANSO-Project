@@ -1,8 +1,11 @@
 ﻿using Capa_Logica;
+using Capa_Datos;
+using Capa_Entidades;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -29,10 +32,6 @@ namespace Capa_Presentacion
             txtCantidadP.Text = "";
         }
 
-        private void btnEliminarP_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
@@ -43,10 +42,60 @@ namespace Capa_Presentacion
             lblTotal.Text = "0.00";
         }
 
-        private void btnCobrar_Click(object sender, EventArgs e)
+       private void btnCobrar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                // Registrar la orden
+                string idOrden = "N" + DateTime.Now.Ticks; // Generar un ID único
+                decimal total = Convert.ToDecimal(lblTotal.Text.Replace("S/. ", ""));
 
+                using (SqlConnection Conectar = Conexion.Instancia.Conectar()) // Usa la conexión de la clase Conexion
+                {
+                    Conectar.Open();
+
+                    // Comando para registrar la orden
+                    using (SqlCommand cmdOrden = new SqlCommand("spRegistrarOrden", Conectar))
+                    {
+                        cmdOrden.CommandType = CommandType.StoredProcedure;
+                        cmdOrden.Parameters.AddWithValue("@idOrden", idOrden);
+                        cmdOrden.Parameters.AddWithValue("@total", total);
+                        cmdOrden.ExecuteNonQuery();
+                    }
+
+                    // Registrar los detalles de la orden
+                    foreach (DataGridViewRow fila in dataGridView2.Rows)
+                    {
+                        if (fila.Cells["idProducto"].Value != null)
+                        {
+                            using (SqlCommand cmdDetalle = new SqlCommand("spInsertarDetalleOrden", Conectar))
+                            {
+                                cmdDetalle.CommandType = CommandType.StoredProcedure;
+                                cmdDetalle.Parameters.AddWithValue("@idOrden", idOrden);
+                                cmdDetalle.Parameters.AddWithValue("@idProducto", fila.Cells["CnidProducto"].Value.ToString());
+                                cmdDetalle.Parameters.AddWithValue("@cantidad", Convert.ToInt32(fila.Cells["Cncantidad"].Value));
+                                cmdDetalle.Parameters.AddWithValue("@precioUnitario", Convert.ToDecimal(fila.Cells["Cnprecio"].Value));
+                                cmdDetalle.Parameters.AddWithValue("@subtotal", Convert.ToDecimal(fila.Cells["CnImporte"].Value));
+                                cmdDetalle.ExecuteNonQuery();
+                            }
+                        }
+                    }
+                }
+
+                // Confirmación de registro exitoso
+                MessageBox.Show("Venta registrada correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Limpieza de datos
+                dataGridView2.Rows.Clear();
+                lblTotal.Text = "0.00";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al registrar la venta: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
+
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
@@ -54,7 +103,7 @@ namespace Capa_Presentacion
             menuPrincipal.Show();
             this.Close();
         }
-
+        
         private void Ventas_Load(object sender, EventArgs e)
         {
             var productos = logProducto.ListarProductos();
@@ -73,7 +122,7 @@ namespace Capa_Presentacion
             // Recorrer las filas del DataGridView1
             foreach (DataGridViewRow fila in dataGridView1.Rows)
             {
-                if (fila.Cells["idProducto"].Value != null && fila.Cells["idProducto"].Value.ToString() == codigoBuscar)
+                if (fila.Cells["nombre"].Value != null && fila.Cells["nombre"].Value.ToString() == codigoBuscar)
                 {
                     // Seleccionar la fila
                     fila.Selected = true;
@@ -87,10 +136,6 @@ namespace Capa_Presentacion
         }
 
         private void lblTotal_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void CalcularTotal()
         {
             decimal total = 0;
 
@@ -114,10 +159,7 @@ namespace Capa_Presentacion
             // Recorrer todas las filas del DataGridView2
             foreach (DataGridViewRow fila in dataGridView2.Rows)
             {
-                if (fila.Cells["Importe"].Value != null) // Validar que no sea nulo
-                {
-                    total += Convert.ToDecimal(fila.Cells["Importe"].Value); // Sumar el valor de la columna "Importe"
-                }
+                total += Convert.ToDecimal(fila.Cells["CnImporte"].Value); // Sumar el valor de la columna "Importe"
             }
 
             // Actualizar el Label con el total
@@ -125,6 +167,11 @@ namespace Capa_Presentacion
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }
